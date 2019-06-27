@@ -111,6 +111,17 @@
 			$response = new sgc_callapi(sgc_constant::SGC_LIB_API, sgc_constant::SGC_ENDPOINT_REPORT_MISSCALL, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_GET, $this->useRestApi);
 			return $response->getResponse();
 		}
+		
+		/**
+		 * Fetch Optin Subscribers Report
+		 * @return type
+		 */
+		function readOptinSubscribersReport() {
+			$this->data[sgc_sms_reports_api_params::API_SMS_REPORTS_PARAM_FROM_DATE] = $this->user->getFromDate();
+			$this->data[sgc_sms_reports_api_params::API_SMS_REPORTS_PARAM_TO_DATE] = $this->user->getToDate();
+			$response = new sgc_callapi(sgc_constant::SGC_LIB_API, sgc_constant::SGC_ENDPOINT_REPORT_OPTIN_SUBSCRIBERS, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_GET, $this->useRestApi);
+			return $response->getResponse();
+		}
 
 	}
 	

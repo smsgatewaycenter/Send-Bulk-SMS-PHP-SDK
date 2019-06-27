@@ -70,6 +70,7 @@
 		const SGC_ENDPOINT_REPORT_FILEUPLOAD = "/self/uploadedFiles/";
 		const SGC_ENDPOINT_REPORT_INCOMINGSMS = "/self/ShortcodeReport/";
 		const SGC_ENDPOINT_REPORT_MISSCALL = "/self/MisscallReport/";
+		const SGC_ENDPOINT_REPORT_OPTIN_SUBSCRIBERS = "/self/OptinReport/";
 
 		//INFO API ENDPOINTS
 		const SGC_ENDPOINT_INFO_DELIVERY_CODES = "/self/deliveryErrorCodes/";

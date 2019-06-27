@@ -59,3 +59,10 @@
 	echo "Miss Call Report: " . $request->readMissCallReport();
 	echo "<br />";
 	echo "<br />";
+	
+	//Read Optin Subscribers Report
+	$User->setFromDate('2019-01-25');
+	$User->setToDate('2019-06-27');
+	echo "Optin Subscribers Report: " . $request->readOptinSubscribersReport();
+	echo "<br />";
+	echo "<br />";
