@@ -77,7 +77,7 @@
 			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_ADDRESS] = $this->reseller->getAddress();
 			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_EXPIRY_DATE] = $this->reseller->getExpiryDate();
 			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_USER_STATUS] = $this->reseller->getUserStatus();
-			$response = new sgc_callapi(sgc_constant::SGC_LIB_API, sgc_constant::SGC_ENDPOINT_RESELLER_CREATE_USER, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
+			$response = new sgc_callapi(sgc_constant::SGC_LIB_API, sgc_constant::SGC_ENDPOINT_RESELLER_UPDATE_USER, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
 			return $response->getResponse();
 		}
 		
