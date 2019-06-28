@@ -68,6 +68,7 @@
 		const SGC_ENDPOINT_REPORT_SMSDLR = "/self/SMSDlr/";
 		const SGC_ENDPOINT_REPORT_SMSDLR_TRANSID = "/self/SMSDlrTrans/";
 		const SGC_ENDPOINT_REPORT_SUMMARY = "/self/DLRSummary/";
+		const SGC_ENDPOINT_REPORT_LINKTRACK = "/self/LinkTrackReport/";
 		const SGC_ENDPOINT_REPORT_FILEUPLOAD = "/self/uploadedFiles/";
 		const SGC_ENDPOINT_REPORT_INCOMINGSMS = "/self/ShortcodeReport/";
 		const SGC_ENDPOINT_REPORT_MISSCALL = "/self/MisscallReport/";

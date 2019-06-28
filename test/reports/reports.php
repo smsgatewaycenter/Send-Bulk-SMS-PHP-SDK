@@ -39,6 +39,13 @@
 	echo "<br />";
 	echo "<br />";
 	
+	//Read Link Track Report
+	$User->setFromDate('2019-05-25');
+	$User->setToDate('2019-06-24');
+	echo "Link Track Report: " . $request->readLinkTrackReport();
+	echo "<br />";
+	echo "<br />";
+	
 	//Read SMS Uploaded Files Report
 	$User->setFromDate('2019-06-25');
 	$User->setToDate('2019-06-25');
