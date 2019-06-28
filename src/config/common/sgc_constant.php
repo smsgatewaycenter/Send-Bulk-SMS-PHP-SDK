@@ -63,7 +63,6 @@
 		const SGC_ENDPOINT_RESELLER_CREDIT_UPDATE = "/reseller/UpdateBalance/";
 		const SGC_ENDPOINT_RESELLER_READ_CREDIT_HISTORY = "/reseller/CreditHistory/";
 
-
 		//REPORT API ENDPOINTS
 		const SGC_ENDPOINT_REPORT_SMSDLR = "/self/SMSDlr/";
 		const SGC_ENDPOINT_REPORT_SMSDLR_TRANSID = "/self/SMSDlrTrans/";
@@ -77,5 +76,7 @@
 		//INFO API ENDPOINTS
 		const SGC_ENDPOINT_INFO_DELIVERY_CODES = "/self/deliveryErrorCodes/";
 		const SGC_ENDPOINT_INFO_API_CODES = "/self/apiErrorCodes/";
-
+		
+		//OTP API ENDPOINTS
+		const SGC_ENDPOINT_OTP = "/send";
 	}

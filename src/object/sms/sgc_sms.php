@@ -2,7 +2,7 @@
 
 	namespace SMSGatewayCenterPhpSdk\object;
 
-	defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
+defined('_SMSGATEWAYCENTRE_ACCESS') OR exit('Direct access to this location is not allowed.');
 
 	/*	 * *******smsgatewaycentre******* * */
 
@@ -28,6 +28,16 @@
 		private $type;
 		private $identifier;
 		private $id;
+		private $sendMethod;
+		private $codeExpiry;
+		private $codeLength;
+		private $codeType;
+		private $retryExpiry;
+		private $renew;
+		private $medium;
+		private $emailId;
+		private $callback;
+		private $otpCode;
 
 		/**
 		 * Main Constructor
@@ -187,7 +197,7 @@
 		function getIdentifer() {
 			return $this->identifier;
 		}
-		
+
 		/**
 		 * Type
 		 * @return id
@@ -339,7 +349,7 @@
 		function setType($type) {
 			$this->type = $type;
 		}
-		
+
 		/**
 		 * Set Identifier
 		 * @param type $identifier
@@ -347,7 +357,7 @@
 		function setIdentifier($identifier) {
 			$this->identifier = $identifier;
 		}
-		
+
 		/**
 		 * Set Id
 		 * @param type $id
@@ -356,5 +366,181 @@
 			$this->id = $id;
 		}
 
+		/**
+		 * Gets the send method.
+		 *
+		 * @return     <type>  The send method.
+		 */
+		function getSendMethod() {
+			return $this->sendMethod;
+		}
+
+		/**
+		 * Gets the code expiry.
+		 *
+		 * @return     <type>  The code expiry.
+		 */
+		function getCodeExpiry() {
+			return $this->codeExpiry;
+		}
+
+		/**
+		 * Gets the code length.
+		 *
+		 * @return     <type>  The code length.
+		 */
+		function getCodeLength() {
+			return $this->codeLength;
+		}
+
+		/**
+		 * Gets the code type.
+		 *
+		 * @return     <type>  The code type.
+		 */
+		function getCodeType() {
+			return $this->codeType;
+		}
+
+		/**
+		 * Gets the retry expiry.
+		 *
+		 * @return     <type>  The retry expiry.
+		 */
+		function getRetryExpiry() {
+			return $this->retryExpiry;
+		}
+
+		/**
+		 * Gets the renew.
+		 *
+		 * @return     <type>  The renew.
+		 */
+		function getRenew() {
+			return $this->renew;
+		}
+
+		/**
+		 * Gets the medium.
+		 *
+		 * @return     <type>  The medium.
+		 */
+		function getMedium() {
+			return $this->medium;
+		}
+
+		/**
+		 * Gets the email identifier.
+		 *
+		 * @return     <type>  The email identifier.
+		 */
+		function getEmailId() {
+			return $this->emailId;
+		}
+
+		function getCallback() {
+			return $this->callback;
+		}
+
+		/**
+		 * Sets the send method.
+		 *
+		 * @param      <type>  $sendMethod  The send method
+		 */
+		function setSendMethod($sendMethod) {
+			$this->sendMethod = $sendMethod;
+		}
+
+		/**
+		 * Sets the code expiry.
+		 *
+		 * @param      <type>  $codeExpiry  The code expiry
+		 */
+		function setCodeExpiry($codeExpiry) {
+			$this->codeExpiry = $codeExpiry;
+		}
+
+		/**
+		 * Sets the code length.
+		 *
+		 * @param      <type>  $codeLength  The code length
+		 */
+		function setCodeLength($codeLength) {
+			$this->codeLength = $codeLength;
+		}
+
+		/**
+		 * Sets the code type.
+		 *
+		 * @param      <type>  $codeType  The code type
+		 */
+		function setCodeType($codeType) {
+			$this->codeType = $codeType;
+		}
+
+		/**
+		 * Sets the retry expiry.
+		 *
+		 * @param      <type>  $retryExpiry  The retry expiry
+		 */
+		function setRetryExpiry($retryExpiry) {
+			$this->retryExpiry = $retryExpiry;
+		}
+
+		/**
+		 * Sets the renew.
+		 *
+		 * @param      <type>  $renew  The renew
+		 */
+		function setRenew($renew) {
+			$this->renew = $renew;
+		}
+
+		/**
+		 * Sets the medium.
+		 *
+		 * @param      <type>  $medium  The medium
+		 */
+		function setMedium($medium) {
+			$this->medium = $medium;
+		}
+
+		/**
+		 * Sets the email identifier.
+		 *
+		 * @param      <type>  $emailId  The email identifier
+		 */
+		function setEmailId($emailId) {
+			$this->emailId = $emailId;
+		}
+
+		/**
+		 * Sets the callback.
+		 *
+		 * @param      <type>  $callback  The callback
+		 */
+		function setCallback($callback) {
+			$this->callback = $callback;
+		}
+		
+		/**
+		 * Gets the retry expiry.
+		 *
+		 * @return     <type>  The retry expiry.
+		 */
+		function getOtpCode() {
+			return $this->otpCode;
+		}
+
+		/**
+		 * Sets the OTP code.
+		 *
+		 * @return     <type>  The OTP code.
+		 */
+		function setOtpCode($otpCode) {
+			$this->otpCode = $otpCode;
+		}
+
+	
 	}
 	

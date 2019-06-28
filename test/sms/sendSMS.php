@@ -1,5 +1,7 @@
 <?php
-
+	
+	/*	 * *******smsgatewaycentre******* * */
+	
 	define("_SMSGATEWAYCENTRE_ACCESS", true);
 
 	ini_set("display_errors", 1);
@@ -32,7 +34,7 @@
 	echo "<br><br>";
 
 	//SEND PHONEBOOK
-	$Sms->setSenderId("SMSGroshanisAT");
+	$Sms->setSenderId("SMSGAT");
 	$Sms->setText("Hello  World");
 	$Sms->setGroupName("LengthTesting");
 	$Sms->setMsgType("text");
