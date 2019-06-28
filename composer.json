@@ -1,9 +1,9 @@
 {
         "name": "smsgatewaycenterphpsdk/smsgatewaycenterapi",
         "type": "library",
-        "description": "SMS Gateway Center PHP SDK for API",
+        "description": "SMS Gateway Center PHP SDK for SMS API",
         "keywords": ["sms gateway center php sdk", "sms gateway center api integration", "bulk sms api"],
-        "homepage": "https://github.com/smsgatewaycenter/smsgatewaycenter-php-sdk",
+        "homepage": "https://github.com/smsgatewaycenter/Send-Bulk-SMS-PHP-SDK",
         "license": "MIT",
         "authors": [
                 {
