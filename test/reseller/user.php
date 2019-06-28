@@ -33,6 +33,18 @@
 	echo "<br />";
 	echo "<br />";
 	
+	//Update User
+	$Reseller->setUserLoginName("12343w");
+	$Reseller->setEmailId("test@testing.com");
+	$Reseller->setMobileNo("919999999999");
+	$Reseller->setFullName("SMS Gateway Center");
+	$Reseller->setAddress("Mumbai India");
+	$Reseller->setExpiryDate("2021-01-20");
+	$Reseller->setUserStatus("Active");//Active|Pending
+	echo $request->updateUser();
+	echo "<br />";
+	echo "<br />";
+	
 	//Change User Password
 	$Reseller->setUserLoginName("testssss");
 	$Reseller->setNewPassword(urlencode("Rags$0303$"));

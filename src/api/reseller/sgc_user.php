@@ -66,6 +66,22 @@
 		}
 
 		/**
+		 * Update User
+		 * @return type
+		 */
+		function updateUser() {
+			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_USERNAME] = $this->reseller->getUserLoginName();
+			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_EMAIL_ID] = $this->reseller->getEmailId();
+			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_CONTACT_NO] = $this->reseller->getMobileNo();
+			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_FULL_NAME] = $this->reseller->getFullName();
+			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_ADDRESS] = $this->reseller->getAddress();
+			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_EXPIRY_DATE] = $this->reseller->getExpiryDate();
+			$this->data[sgc_reseller_user_api_params::API_RESELLER_USER_PARAM_USER_STATUS] = $this->reseller->getUserStatus();
+			$response = new sgc_callapi(sgc_constant::SGC_LIB_API, sgc_constant::SGC_ENDPOINT_RESELLER_CREATE_USER, $this->data, $this->header, sgc_common_api_params::API_COMMON_METHOD_POST, $this->useRestApi);
+			return $response->getResponse();
+		}
+		
+		/**
 		 * Read User
 		 * @return type
 		 */

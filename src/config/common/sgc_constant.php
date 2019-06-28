@@ -55,6 +55,7 @@
 		const SGC_ENDPOINT_RESELLER_CHECK_USER_BALANCE = "/reseller/CheckBalance/";
 		const SGC_ENDPOINT_RESELLER_CHECK_USER_EXPIRY = "/reseller/CheckExpiry/";
 		const SGC_ENDPOINT_RESELLER_CREATE_USER = "/reseller/AddClient/";
+		const SGC_ENDPOINT_RESELLER_UPDATE_USER = "/reseller/UpdateClient/";
 		const SGC_ENDPOINT_RESELLER_CHANGE_USER_PASSWORD = "/reseller/ChangePassword/";
 		const SGC_ENDPOINT_RESELLER_RESET_USER_PASSWORD = "/reseller/ForgotPassword/";
 
